@@ -6,3 +6,4 @@
 [{"Russia"}, {"Denmark"}, {"Kazan"}]   ->   []
 */
 
+string [] array = {"hello", "2", "world", ":-)"};
