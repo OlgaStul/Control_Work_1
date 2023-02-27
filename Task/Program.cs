@@ -29,8 +29,18 @@ string[] NewArray(string [] array)
     return newArray;
 }
 
-
-
-
+void PrintArray(string[] newArray)
+{
+    Console.Write($"[");
+    if(newArray.Length > 0)
+    {
+        for (int i = 0; i < newArray.Length-1; i++)
+            Console.Write($"{newArray[i]}, "); 
+        for (int i = newArray.Length-1; i < newArray.Length; i++)
+            Console.Write($"{newArray[newArray.Length-1]}");     
+    }
+    Console.Write($"]"); 
+}
 
 string[] newArray = NewArray(array);
+PrintArray(newArray);
