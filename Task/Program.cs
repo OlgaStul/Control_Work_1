@@ -7,3 +7,30 @@
 */
 
 string [] array = {"hello", "2", "world", ":-)"};
+
+string[] NewArray(string [] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+      if (array[i].Length < 4) 
+        count++;
+    }
+    string[] newArray = new string[count];
+    count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length < 4)
+        {
+            newArray[count] = array[i];
+            count++;
+        }
+    }
+    return newArray;
+}
+
+
+
+
+
+string[] newArray = NewArray(array);
